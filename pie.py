@@ -54,7 +54,7 @@ lblHousPerc = tk.Label(window, text="", bg="#5ecfd1")
 lblFoodPerc = tk.Label(window, text="", bg="#5ecfd1")
 lblUtilPerc = tk.Label(window, text="", bg="#5ecfd1")
 lblTranPerc = tk.Label(window, text="", bg="#5ecfd1")
-lblTitle = tk.Label(window, text="Expenses Percentage Calculator", bg="#5ecfd1", font=("times new roman", 15))
+lblTitle = tk.Label(window, text="Monthly Expenses Percentage Calculator", bg="#5ecfd1", font=("times new roman", 15))
 #instructions for user
 lblInstruction1 = tk.Label(window, text="1) Enter costs of expenses into the textboxes", bg="#5ecfd1", font=("times_new_roman", 10))
 lblInstruction2 = tk.Label(window, text="2) Click the calculate button", bg="#5ecfd1", font=("times_new_roman", 10))
