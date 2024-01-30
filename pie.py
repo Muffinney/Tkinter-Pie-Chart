@@ -17,8 +17,6 @@ def calc():
         total = hous+food+util+tran #calculate total cost
         if hous<0 or food<0 or util<0 or tran<0: #checks for negative numbers
             lblHousPerc.config(text="ERROR: Costs must be positive")
-        elif round(hous, 2)==round(total, 2) or round(food, 2)==round(total, 2) or round(util, 2)==round(total, 2) or round(tran, 2)==round(total, 2): #checks for one input being too much larger than other inputs
-            lblHousPerc.config(text="ERROR: One input is too much larger than the other inputs")
         else:
             #calculate percents of total cost
             housPerc = round(hous/total*100, 2)
@@ -43,7 +41,7 @@ def calc():
 #window properties
 window = tk.Tk()
 window.title("Graphing with Tkinter")
-window.geometry("800x800")
+window.geometry("700x700")
 window.configure(bg="#5ecfd1")
 window.iconbitmap("PieChart.ico")
 
@@ -58,9 +56,9 @@ lblUtilPerc = tk.Label(window, text="", bg="#5ecfd1")
 lblTranPerc = tk.Label(window, text="", bg="#5ecfd1")
 lblTitle = tk.Label(window, text="Expenses Percentage Calculator", bg="#5ecfd1", font=("times new roman", 15))
 #instructions for user
-lblInstruction1 = tk.Label(window, text="1) Input the values for the quadratic in the textboxes", bg="#5ecfd1", font=("times_new_roman", 10))
+lblInstruction1 = tk.Label(window, text="1) Enter costs of expenses into the textboxes", bg="#5ecfd1", font=("times_new_roman", 10))
 lblInstruction2 = tk.Label(window, text="2) Click the calculate button", bg="#5ecfd1", font=("times_new_roman", 10))
-lblInstruction3 = tk.Label(window, text="3) Read the answer, correct any errors if necessary", bg="#5ecfd1", font=("times_new_roman", 10))
+lblInstruction3 = tk.Label(window, text="3) Read the percentages next to the textboxes", bg="#5ecfd1", font=("times_new_roman", 10))
 
 #create textboxes
 txtHousing = tk.Entry(window, bg="#fff947")
